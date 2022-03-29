@@ -1,0 +1,37 @@
+<form (ngSubmit)="onSubmit()">
+
+    <div class="mb-2">
+      <label for="inputNome" class="form-label">Nome do Autor: </label>
+      <input type="text" class="form-control" id="inputNome" name = "nome" [(ngModel)]="model.nome">
+    </div>
+
+    <div class="mb-2">
+      <label for="inputTelefone" class="form-label">Telefone: </label>
+      <input type="telefone" class = "form-control"  name = "telefone" id="inputTelefone" [(ngModel)]="model.telefone"> 
+    </div>
+
+    <div class="mb-2">
+      <label for="inputEmail" class="form-label">Email: </label>
+      <input type="email" class="form-control" name = "email" id="inputEmail" [(ngModel)]="model.email"> 
+    </div>
+ 
+    <div class="mb-2">
+      <label for="inputCpf" class="form-label">CPF: </label>
+      <input type="cpf" class="form-control" name = "cpf" id="inputCpf" [(ngModel)]="model.cpf">
+    </div>
+
+    <div class="mb-2">
+      <label for="inputDataNasc" class="form-label">Data Nascimento: </label>
+      <input type="dataNascimento" class="form-control" name = "dataNascimento" id="inputDataNasc" [(ngModel)]="model.dataNascimento"> 
+    </div>
+
+
+    <div class="mb-2">
+      <label for="inputlogradouro" class="form-label">Logradouro: </label>
+      <input type="logradouro" class="form-control" name = "logradouro" id="inputlogradouro" [(ngModel)]="model.logradouro">
+    </div>
+
+
+    <button type="submit" class="btn btn-warning">Salvar</button>
+
+  </form>
